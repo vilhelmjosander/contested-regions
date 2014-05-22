@@ -1,0 +1,43 @@
+<html style="width:100%">
+<head>
+    <link rel="stylesheet" href="src/styles/mobilio-menu.css">
+    <script type="text/javascript" src="src/js/mobilio-menu.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body style="width:100%">
+
+    <div id="myList">
+        <ul>
+            <li><a href="#">Top Level</a>
+                <ul class="child-menu">
+                    <li class="HEJ" id="hej2"><a href="#">Sub Level 1</a></li>
+                    <li><a href="#">Sub Level 1</a></li>
+                    <li><a href="#">Sub Level 1</a>
+                        <ul class="child-menu">
+                            <h1>I will be removed, I am not allowed</h1>
+                            <li><a href="#">Sub Level 2</a></li>
+                            <li><a href="#">Sub Level 2</a></li>
+                            <li><a href="#">Sub Level 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Top Level</a></li>
+            <li>
+                <h4> This text will also be removed unless we add "H4" to the allowedTags.</h4>
+                <a href="#">Top Level</a>
+            </li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+            <li><a href="#">Top Level</a></li>
+        </ul>
+    </div>
+
+    <script>
+        var elem = document.querySelector('#myList');
+        mobilioMenu.create(elem, {direction: 'left', theme: 'dark', breakpoint: 770});
+    </script>
+</body>
+</html>

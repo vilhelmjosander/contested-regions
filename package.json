@@ -1,0 +1,10 @@
+{
+  "name": "ContestedRegions",
+  "repository": "git@github.com:vilhelmjosander/contested-regions.git",
+  "description": "Regions-like polyfill for moving DOM-elements around in a supereasy fashion.",
+  "author": "Vilhelm Josander",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0"
+  }
+}
