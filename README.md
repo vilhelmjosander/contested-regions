@@ -1,59 +1,24 @@
-Mobilio-menu
+Contested-Regions
 ============
 
-Transforms your menu to an off-canvas mobile menu with 2 lines of javascript, no dependencies or external libraries. <strong>Only 1kb JS and 3kb CSS when gzipped.</strong>
+Let your content flow in and out of different containers based on the browser width. Perfect for moving content around for mobile devices. <br><br><b>No external dependencies. 922 bytes when gzipped</b>
 
 ##Example:
 
-	var elem = document.querySelector('#myList');
-    mobilioMenu.create(elem, { breakpoint:768 });
+	<div region-container="region1"></div>
+	
+    	<!-- Some additional content here -->
+    	
+    <div region-flow-into="region1" region-breakpoint="767">
+    	<p>This div along with it's content will flow into the container div above when the browser window 		is resized down to 767px or below.</p>
+    </div>
+    
+    
+    
+    
+#### No more. It's that easy!
 
 
-##Options
+###Browser support
 
-###### breakpoint(Int)
-At what width should we initialize/reset the mobilio menu. Null for always.
-
-Defaults: null
-
-<hr>
-
-###### direction(String)
-Should the menu slide in from left or right
-
-Defaults: 'left'
-
-<hr>
-
-###### theme(String)
-Light/Dark theme
-
-Defaults: 'dark'
-
-<hr>
-
-###### hideOriginal(Boolean)
-Whether you should hide the original menu when initializing
-
-Defaults: true
-
-<hr>
-
-###### allowedTags(Array)
-An array containing nodenames of allowed elements. If the original menu contains an element which is not allowed, it will be removed along with all of it's children.
-
-Defaults: ['DIV', 'UL', 'OL', 'LI', 'A', 'SPAN']
-
-<hr>
-
-###### childMenuClass(String)
-Classname of the childmenus. Needed for hierarchical menus with toggle-functionality.
-
-Defaults: '.child-menu'
-
-<hr>
-
-##Caveats
-
-* Only works on browsers with support for CSS3-transforms (Chrome, Safari, Firefox, IE10+)
-
+* IE9+ and all other modern browsers

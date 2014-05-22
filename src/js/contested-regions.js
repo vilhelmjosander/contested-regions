@@ -32,7 +32,7 @@ var Regions = (function(root, undefined) {
   }
 
   function setElems() {
-    var nodeList = toArray.call( document.querySelectorAll('[region-flow-from], [region-flow-into]') ) || [];
+    var nodeList = toArray.call( document.querySelectorAll('[region-container], [region-flow-into]') ) || [];
     for(var i in nodeList) {
 
       var node = nodeList[i];
@@ -43,7 +43,7 @@ var Regions = (function(root, undefined) {
       });
 
       if ( typeof attrs['region-flow-into'] === 'undefined' ) {
-        _this.elems['containers'][ attrs['region-flow-from'] ] = node;
+        _this.elems['containers'][ attrs['region-container'] ] = node;
       } else {
         _this.elems['movers'].push({
           node:             node,
