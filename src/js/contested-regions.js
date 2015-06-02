@@ -91,8 +91,10 @@ var Regions = (function(root, undefined) {
     * Extends orig obj with ext obj - shallow copy
     */
     extend: function(orig, ext) {
-      if(typeof orig !== 'object' || typeof ext !== 'object')
-        throw new Error('Can only extend objects');
+      if(typeof orig !== 'object' || typeof ext !== 'object') {
+        console.log('Can only extend objects. Defaults are being used');
+        return;
+      }
 
       for(var key in ext) {
         orig[key] = ext[key];
