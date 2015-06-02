@@ -6,16 +6,23 @@ Let your content flow in and out of different containers based on the browser wi
 ##Example:
 
 	<div region-container="region1"></div>
-	
+
     	<!-- Some additional content here -->
-    	
+
     <div region-flow-into="region1" region-breakpoint="767">
     	<p>This div along with it's content will flow into the container div above when the browser window 		is resized down to 767px or below.</p>
     </div>
-    
-    
-    
-    
+
+    <script>
+        Regions.init();
+    </script>
+
+
+
+##Build
+
+Install grunt using npm then just runt 'grunt' in the project directory.
+
 #### No more. It's that easy!
 
 

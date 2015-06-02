@@ -20,6 +20,7 @@ var Regions = (function(root, undefined) {
       containers: [],
       movers: []
     };
+    opts = opts || {};
     var options = helpers.extend(defaults, opts);
 
     addListeners();
