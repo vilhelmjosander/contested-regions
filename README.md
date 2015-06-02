@@ -21,7 +21,7 @@ Let your content flow in and out of different containers based on the browser wi
 
 ##Build
 
-Install grunt using npm then just runt 'grunt' in the project directory.
+Install grunt using npm then just runt 'grunt' in the project directory if you want minified resources.
 
 #### No more. It's that easy!
 
