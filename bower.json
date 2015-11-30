@@ -1,0 +1,6 @@
+{
+  "name": "contested-regions",
+  "version": "1.0",
+  "main": "dist/contested-regions.min.js",
+  "ignore": []
+}
