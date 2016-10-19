@@ -135,3 +135,17 @@ var Regions = (function(root, undefined) {
   }
 
 })(window);
+
+/*===========================
+Regions AMD Export
+===========================*/
+if (typeof(module) !== 'undefined')
+{
+    module.exports = window.Regions;
+}
+else if (typeof define === 'function' && define.amd) {
+    define([], function () {
+        'use strict';
+        return window.Regions;
+    });
+}
